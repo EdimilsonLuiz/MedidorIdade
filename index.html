@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+      <div id="anoTxt">
+        <label for="ano_nascTxt">Ano Nascimento</label>
+        <input type="number" name="ano_nascTxt" id="ano_nascTxt" />
+      </div>
+
+      <div>
+        <p>Sexo:</p>
+        <input
+          type="radio"
+          name="genero"
+          id="masculinoTxt"
+          value="Masculino"
+          checked
+        />
+        <label for="masculinoTxt"> Masculino</label>
+
+        <input type="radio" name="genero" id="femininoTxt" value="Feminino" />
+        <label for="femininoTxt">Feminino</label>
+      </div>
+
+      <div>
+        <input type="button" value="enviar" onclick="cadastrar()" id="enviar" />
+      </div>
+
+      <div id="img"></div>
+
+      <div id="resultadoTxt"></div>
+    </section>
+
+    <footer>
+      <p><i> &#169; Criado por Edimilson Luiz</i></p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
